@@ -1,0 +1,162 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+  I am a <b>Software Engineering undergraduate</b> at <b>Tongji University</b>. With a solid foundation in computer science and extensive hands-on experience through a series of academic projects, I have developed a keen interest in <b>Computer Vision, Software Development, and UI/UX Design</b>. 
+  Beyond the classroom, I am a self-driven learner with a passion for languages and cross-cultural communication, currently proficient in <b>English (TOEIC 905)</b> and <b>Japanese (JLPT N2)</b>. I thrive on exploring emerging technologies and am dedicated to building efficient, user-centric software solutions.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+<div class="time-line-container grid gap-4 mb-10">
+    <div class="flex items-start gap-4">
+      <div class="avatar">
+        <div class="w-12 h-12 rounded">
+          <img src="/tongji.webp" alt="Tongji University Logo" />
+        </div>
+      </div>
+      <TimeLineElement
+        title="Tongji University"
+        subtitle="2022 to 2026 (Expected) at Tongji University, Shanghai, China"
+      >
+        Bachelor of Engineering in Software Engineering. GPA: 89.5/100.
+      </TimeLineElement>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <div class="avatar">
+        <div class="w-12 h-12 rounded">
+          <img src="/No.5.webp" alt="School Logo" />
+        </div>
+      </div>
+      <TimeLineElement
+        title="Fujian Quanzhou No.5 Middle School"
+        subtitle="2020 to 2022 at Fujian Quanzhou No.5 Middle School, Fujian, China"
+      >
+
+       National College Entrance Examination (Gaokao) Score:</strong> 650/750
+       <span class="block text-sm ml-0">
+         Ranked 918th out of 218,000+ in Fujian (<b>Top 0.5%</b>)
+       </span>
+      </TimeLineElement>
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="ROS-based Vehicle Collaborative Mapping System"
+      subtitle="Apr 2025 – Jun 2025, Research Member in Prof. Lin Zhang’s Lab, Tongji University"
+    >
+    Developing a ROS-based multi-vehicle collaborative SLAM system integrating LiDAR mapping and object detection technologies to address large-scale urban mapping challenges.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="MaintainMind: Aircraft Engine Intelligent Maintenance Web Application"
+      subtitle="Feb 2025 – Apr 2025, Project Software Part Member in Prof. Chunyan Duan’s Lab, Tongji University"
+    >
+      Developing an intelligent predictive maintenance web application for aircraft engines using advanced deep learning technologies.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="3D Gaussian-Splatting-Based Modeling Web Application"
+      subtitle="Sep 2024 – Dec 2024, Research Member in Prof. Lin Zhang’s Lab, Tongji University"
+    >
+      Developing a web application that enables users to upload videos and automatically generate high-fidelity 3D scenes using the 3D Gaussian Splatting technique, providing an accessible platform for immersive 3D reconstruction.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="AI-Powered Language Tutor Web Application for Children"
+      subtitle="Sep 2024 – Dec 2024, Research Member in Prof. Ying Shen’s Lab, Tongji University"
+    >
+      Developed an interactive web application to enhance children's language skills by enabling them to describe images verbally, with real-time AI analysis and Speech Recognition.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Instrument Trading E-commerce Platform"
+      subtitle="Sep 2024 – Nov 2024, Project Leader in Prof. Qingfeng Du’s Lab, Tongji University"
+    >
+      Developed a simulated e-commerce web application for musical instrument trading, integrating AI-powered recommendation features to guide users in instrument selection and learning.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Plant Care Forum & Encyclopedia Web Application"
+      subtitle="Jun 2024 – Aug 2024, Project Member in Prof. Shijin Yuan’s Lab, Tongji University"
+    >
+      Developed a comprehensive web platform featuring a plant care discussion forum and an interactive plant encyclopedia to facilitate knowledge sharing and community engagement among gardening enthusiasts.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Tower Defense Game Reproduction"
+      subtitle="Nov 2023 – Jan 2024, Project Leader in Prof. Fengxia Han’s Lab, Tongji University"
+    >
+      Reproducing a simplified version of the popular Chinese tower defense game "Carrot Fantasy" using Cocos2d-x engine and object-oriented C++ programming.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Awards</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+
+    <TimeLineElement
+      title="Second Prize, 2nd 'SSE Cup · Haiju Yingcai' Shanghai Innovation & Entrepreneurship Competition"
+      subtitle="May 2025"
+    >
+    </TimeLineElement>
+    <TimeLineElement
+      title="First Prize, Tongji University 19th 'Challenge Cup' Academic Science Works Competition"
+      subtitle="April 2025"
+    >
+    </TimeLineElement>
+    <TimeLineElement
+      title="Second Prize, Tongji University Excellent Student Scholarship"
+      subtitle="2023"
+    >
+    </TimeLineElement>
+    <TimeLineElement
+      title=" Third Prize, Tongji University Structural Competition"
+      subtitle="2022"
+    >
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+<ul class="list-none  space-y-6">
+  <li>
+    <span class="font-bold text-lg">● Languages</span>
+    <ul class="list-disc pl-6 mt-2 space-y-1">
+      <li>Chinese (native)</li>
+      <li>English (proficient): TOEIC L&R (905), CET4 (586), CET6 (546) </li>
+      <li>Japanese (basic): JLPT N2(156)</li>
+    </ul>
+  </li>
+
+  <li>
+    <span class="font-bold text-lg">● Technical Skills</span>
+    <ul class="list-disc pl-10 mt-2 space-y-2">
+      <li>Proficient in using the large model (OpenAI, Qwen, Claude)</li>
+      <li>Computer Language: C/C++, Java, Python, HTML, CSS, JavaScript</li>
+      <li>Database: MySQL</li>
+      <li>System: Windows, Linux virtual machine</li>
+      <li>Frame: Vue, SpringBoot</li>
+    </ul>
+  </li>
+</ul>
+</BaseLayout>
