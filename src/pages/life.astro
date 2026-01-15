@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Life" sideBarActiveItemID="life">
+  <div class="flex flex-col items-center justify-center w-full mt-10 text-center">
+    
+    <div class="max-w-xl mb-10">
+      <h1 class="text-3xl font-bold mb-4 italic">Moments & Interests</h1>
+      <p class="text-lg opacity-80 leading-relaxed">
+        If you'd like to explore my personal life and hobbies, feel free to visit my dedicated personal space by clicking the image below.
+      </p>
+    </div>
+
+    <div class="relative group cursor-pointer overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl">
+      <a href="https://your-life-site.com" target="_blank" class="block">
+        <img 
+          src="/Life.webp" 
+          alt="My Life Site" 
+          class="w-full max-w-2xl h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+          style="max-height: 350px;"
+        />
+        
+      </a>
+    </div>
+
+  </div>
+</BaseLayout>

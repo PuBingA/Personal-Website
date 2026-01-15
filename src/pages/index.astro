@@ -10,20 +10,31 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
+  <div class="pb-12 ">
     <div class="text-xl py-1">Hey there 👋</div>
     <div class="text-5xl font-bold">I'm Fubin Chen</div>
     <div class="text-3xl py-3 font-bold">A Software Engineering Undergraduate based in China.</div>
     <div class="py-2">
       <text class="text-lg">
-         I am a <b>Software Engineering undergraduate</b> based in China. 
+         I am a Software Engineering undergraduate based in China. 
          This is my personal space where I showcase my Academic journey and
-         share my interest. 
+         projects. 
           Welcome to explore!
       </text>
     </div>
   </div>
 
+    <div class="flex justify-center">
+      <img 
+        src="/welcome.webp" 
+        alt="Welcome Image" 
+        class="h-auto rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer" 
+        style="max-height: 350px;"
+      />
+    </div>
+
+
+<!--
   <div>
     <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
   </div>
@@ -70,4 +81,5 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
+  -->
 </BaseLayout>
