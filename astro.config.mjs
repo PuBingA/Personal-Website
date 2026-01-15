@@ -7,5 +7,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://PuBingA.github.io',
   base: '/Personal-Website',
+  trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind()]
 });
