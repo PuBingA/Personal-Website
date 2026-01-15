@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 
 export default defineConfig({
-  site: '',
-  trailingSlash: 'always',
+  site: 'https://personal-website-five-hazel-54.vercel.app/',
   integrations: [mdx(), sitemap(), tailwind()]
 });
